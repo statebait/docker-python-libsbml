@@ -4,12 +4,20 @@
 
 Alpine-based Docker Image for the python libsbml library. Uses python 3.7, g++ and make as additional dependencies.
 
+Also includes a tag for the [stimator](https://pypi.org/project/stimator/) python library.
+
 #### Usage
 
 - To use as a base image, in the Dockerfile:
 
 ```
-FROM statebait/python-libsbml
+FROM statebait/python-libsbml:latest
+```
+
+- To use the image with stimator:
+
+```
+FROM statebait/python-libsbml:with-stimator
 ```
 
 ### License
